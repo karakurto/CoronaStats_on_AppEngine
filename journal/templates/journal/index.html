@@ -1,0 +1,12 @@
+{% extends "journal/base.html" %}
+
+{% block content %}
+    <p>Knowledge Journal helps you keep track of your learning notes.</p>
+    <p>Login to access your own journal</p>
+
+    <p>Here are some public journal topics:
+    <ul>
+        <a href="{% url 'journal:public_topics'%}"> Public Topics </a>
+    </ul>
+
+{% endblock content %}
